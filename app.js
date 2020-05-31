@@ -13,16 +13,9 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const app = express();
 
-const LoggerMiddleware = (req,res,next) =>{
-    console.log(`Logged  ${req.url}  ${req.method} -- ${new Date()}`)
-    next();
-}
-
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(LoggerMiddleware);
 app.use((err, req, res, next) => {
-    console.error(err.stack)
     res.status(500).send({
         status: 500,
         name: 'Internal error',
@@ -56,5 +49,5 @@ app.use(function(req, res, next){
 });
 
 app.listen(PORT, () => { 
-    console.log(`Server started at http://localhost:${PORT}`);
+    console.log(`Server started at port ${PORT}`);
 });
