@@ -84,7 +84,13 @@ exports.new = function (req, res) {
                                                 data
                                             });
                                         })
-                                        .catch(err => console.log(err));
+                                        .catch(err => {
+                                            res.status(401).json({
+                                                status: 401,
+                                                statusText: 'error',
+                                                err
+                                            })
+                                        });
                                 });
                             });
                         }
