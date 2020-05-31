@@ -61,7 +61,6 @@ router.post('/oauth', (req, res) => {
             res.send({url});
         })
         .catch(err => {
-            console.log(err);
             res.send(err);
         })
 });
@@ -103,7 +102,6 @@ router.get('/callback', (req, res) => {
 
         })
         .catch(err => {
-            console.log(err);
             res.cookie('status', 'error').redirect('/');
         })
 });
