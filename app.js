@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const path = require("path");
 const apiRoutes = require('./routes/apiRoutes');
 const authRoutes = require('./routes/authRoutes');
 require('dotenv').config()
@@ -25,6 +26,7 @@ app.use((err, req, res, next) => {
         message: err.message
     })
 })
+app.use(express.static(path.join(__dirname, "public")))
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
@@ -36,7 +38,7 @@ if(!db){
 }
 
 app.get("/", (req, res, next) => {
-    res.send('Welcome');
+    // res.send('Welcome');
 });
 
 app.use('/api', apiRoutes);
