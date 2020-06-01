@@ -66,6 +66,9 @@ router.post('/oauth', (req, res) => {
 });
 
 router.get('/callback', (req, res) => {
+    if (Object.keys(req.query).length === 0) {
+        res.redirect('/');
+    }
     if (req.query.denied) {
         res.cookie('status', 'canceled').redirect('/');
     }
