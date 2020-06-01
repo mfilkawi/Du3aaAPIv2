@@ -4,7 +4,7 @@ const authenticateToken = require('../utils/jwt');
 const Disabled = require('../utils/Disabled');
 
 router.get('/user', Disabled, userController.index);
-router.post('/user', userController.new);
+router.post('/user', Disabled, userController.new);
 router.post('/login', userController.login);
 
 router.post('/verify', authenticateToken, (req, res) => {
