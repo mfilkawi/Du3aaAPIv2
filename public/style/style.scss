@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+.container{
+    padding: 1em;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+
+    .title-main{
+        font-family: "Rajdhani", serif;
+        color: black;
+        font-size: 50px;
+        font-weight: 200;
+    }
+
+    .wrapper{
+        .SignInBtn{
+            border-radius: 10px;
+            box-shadow: 8px 6px 20px 2px #b5b5b5;
+            text-align: center;
+            padding: 20px;
+            margin: 1.5em 0;
+
+            #alert{
+                margin-bottom: 20px;
+                text-align: right;
+            }
+        
+            h2{
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+.success{
+    padding: 5px;
+    background: rgb(190, 255, 190);
+    border: 1px solid green;
+}
+.danger{
+    padding: 5px;
+    background: rgb(255, 190, 190);
+    border: 1px solid red;
+}
+.warning{
+    padding: 5px;
+    background: rgb(255, 240, 190);
+    border: 1px solid orange;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
