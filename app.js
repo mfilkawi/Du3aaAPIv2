@@ -37,7 +37,7 @@ app.get("/", (req, res, next) => {
     // res.send('Welcome');
 });
 
-app.use('/api', apiRoutes);
+app.use('/api/v2', apiRoutes);
 app.use('/auth', authRoutes);
 app.use('/twitter', twitterRoutes);
 
