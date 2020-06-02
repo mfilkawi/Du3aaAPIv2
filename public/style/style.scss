@@ -50,6 +50,20 @@ body{
                 font-weight: 400;
                 margin-bottom: 1em;
             }
+
+            #signin{
+                text-decoration: none;
+                color: black;
+                border: 1px solid black;
+                padding: 3px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+
+                &:hover{
+                    background: black;
+                    color: white;
+                }
+            }
         }
     }
 }
