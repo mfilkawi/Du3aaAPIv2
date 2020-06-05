@@ -10,6 +10,10 @@ fetch(`${window.location.origin}/twitter/oauth`,{
     })
     .catch(err => {
         console.log(err);
-        const SignInContainer = document.querySelector('.sign-in-btn');
+        const SignInContainer = document.querySelector('#errMSG');
+        const showBtn = document.getElementById('show');
+        const confirmEle = document.querySelector('.confirm');
+        showBtn.style.visibility = 'hidden';
+        confirmEle.style.visibility = 'hidden';
         SignInContainer.innerHTML = `<span style="color:red; font-weight: 600;">الرجاء المحاولة لاحقاً</span>`;
     })
