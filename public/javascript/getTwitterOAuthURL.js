@@ -5,8 +5,7 @@ fetch(`${window.location.origin}/twitter/oauth`,{
     .then(data => {
         if(data.status == 404) throw err;
         const SignInContainer = document.querySelector('.sign-in-btn');
-        // SignInContainer.innerHTML = `<a href="${data.url}"><img src="./style/img/sign-in-with-twitter-gray.png" alt="sign in with twitter"></a>`;
-        SignInContainer.innerHTML = `<a href="${data.url}" id="signin">اضغط هنا للإشتراك</a>`;
+        SignInContainer.innerHTML = `<a href="${data.url}" class="btn" id="signin">موافق</a>`;
     })
     .catch(err => {
         console.log(err);
