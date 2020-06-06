@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, "public")))
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     dbName: process.env.DATABASE_NAME
 });
 var db = mongoose.connection;
