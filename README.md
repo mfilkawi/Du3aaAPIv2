@@ -4,5 +4,3 @@
     |
     <a href="https://docs.du3aa.rest">Documentation</a>
 </p>
-
-# Du3aaAPI v2
