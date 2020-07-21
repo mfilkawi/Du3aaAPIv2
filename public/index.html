@@ -3,51 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Du3aaAPI</title>
     <link rel="stylesheet" href="./style/style.min.css">
 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="./javascript/getTwitterOAuthURL.js"></script>
     <script src="./javascript/cookie.js"></script>
     <script src="./javascript/alerts.js" defer></script>
-    <script src="./javascript/confirm.js" defer></script>
 </head>
 <body dir="rtl">
-    <div class="container">
-        <h1 class="title-main">Du3aaAPI</h1>
-        <small>تحت التجربة</small>
-
-        <div class="wrapper">
-            <div class="SignInBtn">
-                <div id="alert"></div>
-                <h2>إشترك معنا</h2>
-                <p>اسمح لـ تطبيق du3aaAPI بتغريد دعاء من حسابك كل ساعة</p>
-                <button class="btn" id="show">اضغط هنا للإشتراك</button>
-                <div id="errMSG"></div>
-            </div>            
+    <div class="msg"></div>
+    
+    <div class="card">
+        <div class="title">du3aaAPI</div>
+        <div class="paragraph">
+            <p>اسمح لـ تطبيق <span>du3aaAPI</span> بتغريد دعاء من حسابك كل ساعة</p>
         </div>
-
-        <div class="followBtn">
-            <a href="https://twitter.com/du3aaAPI?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="true" data-lang="ar">Follow @du3aaAPI</a>
-        </div>
-    </div>
-
-    <div class="confirm">
-        <div class="confirm-body">
-            <p>شروط الاستخدام</p>
+      
+        <div class="policy">
             <hr>
             <ul>
                 <li>نتبع شروط وقوانين موقع تويتر</li>
                 <li>لن نقوم بنشر او بيع بيانات الحسابات المشتركة</li>
                 <li>ننشر تغريدة واحدة (دعاء) كل ساعة بشكل آلي فقط</li>
             </ul>
-            <small><strong>ملاحظة: </strong>ان لم نقوم بالتغريد من حسابك فهذا يعني ان هناك أعمال صيانة للآلي. نعمل على أن يكون الآلي خال من الأخطاء</small>
             <hr>
-            <div class="btns">
-                <div class="sign-in-btn">جار التحميل ..</div>
-                <button class="btn" id="cancelBtn">إلغاء</button>
-            </div>
+
+            <p><span>ملاحظة:</span> ان لم نقوم بالتغريد من حسابك فهذا يعني ان هناك أعمال صيانة للآلي. نعمل على أن يكون الآلي خال من الأخطاء</p>
+        </div>
+      
+        <div class="button">
+            <p>جار التحميل ..</p>
         </div>
     </div>
 </body>
