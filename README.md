@@ -2,5 +2,5 @@
 <p align="center">Project CLOSED!</p>
 
 ## Project moved to
-- https://github.com/mfilkawi/du3aa-client
-- https://github.com/mfilkawi/du3aa-api
+- [Du3aa client](https://github.com/mfilkawi/du3aa-client)
+- [Du3aa API](https://github.com/mfilkawi/du3aa-api)
